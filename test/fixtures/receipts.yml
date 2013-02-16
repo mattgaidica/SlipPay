@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  receipt_id: 1
+  store: MyString
+  total: MyString
+  sell_date: 2013-02-16 13:35:19
+  created_date: 2013-02-16 13:35:19
+  categories: MyString
+  image: MyString
+
+two:
+  receipt_id: 1
+  store: MyString
+  total: MyString
+  sell_date: 2013-02-16 13:35:19
+  created_date: 2013-02-16 13:35:19
+  categories: MyString
+  image: MyString
