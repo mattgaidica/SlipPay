@@ -459,6 +459,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+  .jumbotron h1 {
+    font-size:100px;
+  }
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -800,6 +803,9 @@
 }
 
 @media (max-width: 767px) {
+  .jumbotron h1 {
+    font-size:65px;
+  }
   body {
     padding-right: 20px;
     padding-left: 20px;
@@ -898,6 +904,9 @@
 }
 
 @media (max-width: 480px) {
+  .jumbotron h1 {
+    font-size:45px;
+  }
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }

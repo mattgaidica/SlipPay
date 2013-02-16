@@ -42,5 +42,6 @@ class PagesController < ApplicationController
         end
       end
     end
+    render text: 'complete', :status => 200
   end
 end
