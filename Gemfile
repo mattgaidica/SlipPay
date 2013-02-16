@@ -7,7 +7,6 @@ gem 'rails', '3.1.3'
 
 gem 'pg'
 gem 'shoehorn', :git => 'git://github.com/mattgaidica/shoehorn.git'
-gem 'newrelic_rpm'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -34,4 +33,8 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
+end
+
+group :production do
+  gem 'newrelic_rpm'
 end
