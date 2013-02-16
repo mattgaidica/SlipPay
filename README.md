@@ -1,0 +1,1 @@
+*Stop getting shafted on Craigslist and eBay.* Buy real receipts (or original packaging!) and return your items to the store for cash. [Visit the project on Heroku](http://slippay.herokuapp.com/)
