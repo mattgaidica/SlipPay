@@ -2,6 +2,7 @@ Slipaid::Application.routes.draw do
   resources :users
 
   get 'register' => 'pages#register'
+  get 'sync' => 'pages#sync'
 
   root :to => 'pages#index'
   # The priority is based upon order of creation:

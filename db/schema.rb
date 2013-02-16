@@ -11,11 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130216042141) do
+ActiveRecord::Schema.define(:version => 20130216193632) do
 
   create_table "credentials", :force => true do |t|
     t.string "key"
     t.string "value"
+  end
+
+  create_table "receipts", :force => true do |t|
+    t.integer  "receipt_id"
+    t.string   "store"
+    t.string   "total"
+    t.text     "note"
+    t.datetime "sell_date"
+    t.datetime "modified_date"
+    t.datetime "created_date"
+    t.string   "categories"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
@@ -24,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20130216042141) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "post_receipts", :default => false
   end
 
 end

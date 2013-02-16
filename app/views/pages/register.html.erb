@@ -22,7 +22,7 @@
           <label class="control-label" for="inputPassword"></label>
           <div class="controls">
             <label class="checkbox">
-              <input type="checkbox" disabled checked> Anonymously post my receipts for sale
+              <%= f.check_box(:post_receipts, :checked => @user.post_receipts) %> Anonymously post my receipts for sale
             </label>
           </div>
         </div>
@@ -30,7 +30,7 @@
           <label class="control-label" for="inputPassword"></label>
           <div class="controls">
             <label class="checkbox">
-              <input type="checkbox" disabled checked> Let me know when my receipts have been posted or deleted
+              <input type="checkbox" disabled> Let me know when my receipts have been posted or deleted
             </label>
           </div>
         </div>
@@ -38,7 +38,7 @@
           <label class="control-label" for="inputPassword"></label>
           <div class="controls">
             <label class="checkbox">
-              <input type="checkbox" disabled checked> Receive the weekly SlipPay digest
+              <input type="checkbox" disabled> Receive the weekly SlipPay digest
             </label>
           </div>
         </div>
