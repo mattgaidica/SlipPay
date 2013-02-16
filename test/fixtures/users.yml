@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tkn: MyString
+  uname: MyString
+  email: MyString
+
+two:
+  tkn: MyString
+  uname: MyString
+  email: MyString

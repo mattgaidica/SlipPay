@@ -1,0 +1,53 @@
+<div class="jumbotron">
+  <h1 alt="SlipPay"><span class="light">Slip</span><span class="dark">Pay</h1>
+  <% if @user.email.nil? %>
+    <p class="lead"><strong>Thanks for signing in.</strong> Were almost done.</p>
+  <% else %>
+    <p class="lead"><strong>Welcome back!</strong> You may modify your information below.</p>
+  <% end %>
+</div>
+
+<div class="row-fluid marketing">
+  <%= form_for(@user, html: {class: "form-horizontal"}) do |f| %>
+    <fieldset>
+      <form class="form-horizontal">
+        <% if flash[:notice] %><div style="text-align:center;" class="alert alert-success"><%= flash[:notice] %></div><% end %>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Email</label>
+          <div class="controls">
+            <%= f.text_field :email, placeholder: 'Email', value: @user.email %>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPassword"></label>
+          <div class="controls">
+            <label class="checkbox">
+              <input type="checkbox" disabled checked> Anonymously post my receipts for sale
+            </label>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPassword"></label>
+          <div class="controls">
+            <label class="checkbox">
+              <input type="checkbox" disabled checked> Let me know when my receipts have been posted or deleted
+            </label>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPassword"></label>
+          <div class="controls">
+            <label class="checkbox">
+              <input type="checkbox" disabled checked> Receive the weekly SlipPay digest
+            </label>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <button type="submit" class="btn btn-medium">Save</button>
+          </div>
+        </div>
+      </form>
+    </fieldset>
+  <% end %>
+</div>
