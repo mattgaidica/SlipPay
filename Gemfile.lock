@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:mattgaidica/shoehorn.git
+  remote: git://github.com/mattgaidica/shoehorn.git
   revision: 93e392937b1ee9a7ec01f249718c144d4d7244fa
   specs:
     shoehorn (0.5.4)
